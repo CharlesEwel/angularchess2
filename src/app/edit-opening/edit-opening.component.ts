@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Opening } from './models/opening.model'
+import { Opening } from './models/opening.model';
 
 @Component({
   selector: 'app-edit-opening',
@@ -14,7 +14,7 @@ export class EditOpeningComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+
   }
 
 }

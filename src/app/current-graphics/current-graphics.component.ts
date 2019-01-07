@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-import { Opening } from './models/opening.model'
+import { Opening } from './models/opening.model';
 
 @Component({
   selector: 'app-current-graphics',
