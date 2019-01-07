@@ -364,7 +364,7 @@ export class AppComponent {
      }
    ];
     for(var i in jsondata) {
-      Opening opening = new Opening(jsondata[i]["Name"], jsondata[i]["Category"], jsondata[i]["Moves"], jsondata[i]["Games Found"],  jsondata[i]["Win"], jsondata[i]["Draw"], jsondata[i]["Loss"]);
+      Opening opening = new Opening(jsondata[i]["Name"], jsondata[i]["Category"], jsondata[i]["Moves"], jsondata[i]["Games Found"], jsondata[i]["Win"], jsondata[i]["Draw"], jsondata[i]["Loss"]);
       this.kegs.push(opening);
     };
   };
