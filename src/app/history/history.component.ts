@@ -10,10 +10,7 @@ export class HistoryComponent implements OnInit {
   constructor(private elementRef:ElementRef) {};
 
   ngOnInit() {
-    // basicTabulate('#first-table', jsondata, ['Name', 'Moves', 'Games Found', 'Win', 'Draw', 'Loss', 'Difference', 'Percentage Popularity']); // 2 column table
-    // advancedTabulate('#second-table', jsondata);
-    // createBasicChart('#first-chart', jsondata);
-    // createAdvancedChart('#second-chart', jsondata);
+
   }
 
 
@@ -21,7 +18,7 @@ export class HistoryComponent implements OnInit {
   ngAfterViewInit() {
     var s = document.createElement("script");
     s.type = "text/javascript";
-    s.src = "src/scripts.js";
+    s.innerHTML="basicTabulate('#first-table', jsondata, ['Name', 'Moves', 'Games Found', 'Win', 'Draw', 'Loss', 'Difference', 'Percentage Popularity']); advancedTabulate('#second-table', jsondata); createBasicChart('#first-chart', jsondata); createAdvancedChart('#second-chart', jsondata);";
     this.elementRef.nativeElement.appendChild(s);
   }
 
