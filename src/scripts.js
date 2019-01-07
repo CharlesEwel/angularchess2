@@ -353,13 +353,6 @@ var jsondata = [
  }
 ]
 
-// basicTabulate('#first-table', jsondata, ['Name', 'Moves', 'Games Found', 'Win', 'Draw', 'Loss', 'Difference', 'Percentage Popularity']); // 2 column table
-// advancedTabulate('#second-table', jsondata);
-// createBasicChart('#first-chart', jsondata);
-// createAdvancedChart('#second-chart', jsondata);
-// createAdvancedChart("#current-chart", jsondata);
-// editableTabulate("#current-table", jsondata);
-
 function averageJSON(categoryName) {
   var total=0;
   var iterations = 0;
@@ -369,6 +362,14 @@ function averageJSON(categoryName) {
   };
   var average = parseFloat(total)/iterations;
   return average
+}
+
+function sumJSON(categoryName) {
+  var total=0;
+  for(var i in jsondata) {
+    total+=jsondata[i][categoryName];
+  };
+  return total
 }
 
 //Table Creation Functions
