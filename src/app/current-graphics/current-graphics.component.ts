@@ -16,7 +16,7 @@ export class CurrentGraphicsComponent implements OnInit {
   ngAfterViewInit() {
     var s = document.createElement("script");
     s.type = "text/javascript";
-    s.innerHTML="createAdvancedChart('#current-chart', jsondata); searchableTabulate('#current-table', jsondata);";
+    s.innerHTML="console.log('current-graphics fires'); createAdvancedChart('#current-chart', jsondata); searchableTabulate('#current-table', jsondata);";
     this.elementRef.nativeElement.appendChild(s);
   }
 
