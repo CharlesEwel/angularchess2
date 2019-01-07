@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private elementRef:ElementRef) {};
 
   ngOnInit() {
     // basicTabulate('#first-table', jsondata, ['Name', 'Moves', 'Games Found', 'Win', 'Draw', 'Loss', 'Difference', 'Percentage Popularity']); // 2 column table
@@ -16,7 +16,7 @@ export class HistoryComponent implements OnInit {
     // createAdvancedChart('#second-chart', jsondata);
   }
 
-  constructor(private elementRef:ElementRef) {};
+
 
   ngAfterViewInit() {
     var s = document.createElement("script");
