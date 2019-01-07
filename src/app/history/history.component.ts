@@ -16,4 +16,13 @@ export class HistoryComponent implements OnInit {
     // createAdvancedChart('#second-chart', jsondata);
   }
 
+  constructor(private elementRef:ElementRef) {};
+
+  ngAfterViewInit() {
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "src/scripts.js";
+    this.elementRef.nativeElement.appendChild(s);
+  }
+
 }
