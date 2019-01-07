@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { HistoryComponent } from './history/history.component';
 import { CurrentGraphicsComponent } from './current-graphics/current-graphics.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { EditOpeningComponent } from './edit-opening/edit-opening.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HomeComponent,
     HistoryComponent,
     CurrentGraphicsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    EditOpeningComponent
   ],
   imports: [
     BrowserModule,
