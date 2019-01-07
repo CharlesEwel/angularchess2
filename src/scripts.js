@@ -358,7 +358,7 @@ var jsondata = [
 // createBasicChart('#first-chart', jsondata);
 // createAdvancedChart('#second-chart', jsondata);
 // createAdvancedChart("#current-chart", jsondata);
-// searchableTabulate("#current-table", jsondata);
+// editableTabulate("#current-table", jsondata);
 
 function averageJSON(categoryName) {
   var total=0;
@@ -445,7 +445,7 @@ function advancedTabulate(divId, data){
 		    	return d.value;
 		    });
 	  };
-function searchableTabulate(divId, data){
+function editableTabulate(divId, data){
   var sortAscending = true;
   var table = d3.select(divId).append('table');
   var titles = d3.keys(data[0]);
