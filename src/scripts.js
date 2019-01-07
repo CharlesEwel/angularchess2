@@ -353,10 +353,10 @@ var jsondata = [
  }
 ]
 
-basicTabulate('#first-table', jsondata, ['Name', 'Moves', 'Games Found', 'Win', 'Draw', 'Loss', 'Difference', 'Percentage Popularity']); // 2 column table
-advancedTabulate('#second-table', jsondata);
-createBasicChart('#first-chart', jsondata);
-createAdvancedChart('#second-chart', jsondata);
+// basicTabulate('#first-table', jsondata, ['Name', 'Moves', 'Games Found', 'Win', 'Draw', 'Loss', 'Difference', 'Percentage Popularity']); // 2 column table
+// advancedTabulate('#second-table', jsondata);
+// createBasicChart('#first-chart', jsondata);
+// createAdvancedChart('#second-chart', jsondata);
 // createAdvancedChart("#current-chart", jsondata);
 // searchableTabulate("#current-table", jsondata);
 
