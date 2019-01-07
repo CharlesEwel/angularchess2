@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { HistoryComponent } from './history/history.component';
+import { CurrentGraphicsComponent } from './current-graphics/current-graphics.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    HistoryComponent,
+    CurrentGraphicsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
