@@ -362,10 +362,10 @@ export class AppComponent {
        "Difference": 12.1,
        "Percentage Popularity": 9.574703324
      }
-    ]
+   ];
     for(var i in jsondata) {
       Opening opening = new Opening(jsondata[i]["Name"], jsondata[i]["Category"], jsondata[i]["Moves"], jsondata[i]["Games Found"],  jsondata[i]["Win"], jsondata[i]["Draw"], jsondata[i]["Loss"]);
       this.kegs.push(opening);
     };
-  }
+  };
 }
