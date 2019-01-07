@@ -566,7 +566,7 @@ function createAdvancedChart(divId, data) {
       // Passing a duration parameter makes the chart animate. Without
       // it there is no transition
       chart.draw(800);
-      d3.select('.mean').remove()
+      d3.selectAll('.mean').remove()
       drawMedianLine(svg, x, chart)
 
     });
